@@ -26,3 +26,17 @@ if (arrayOfVowels.includes(arrayOfLetters[counter])){
 	return numOfVowels;
 }
 console.log(findingNumOfVowels("Strive not to be a success, but rather to be of value."));
+
+//Solution
+function findingNumOfVowels(str) {
+	const arrayOfVowels = ["a", "e", "i", "o", "u"];
+	let numOfVowels = 0;
+	const arrayOfLetters = str.toLowerCase().split("");
+	for (let counter = 0; counter < arrayOfLetters.length; counter++){
+		if (arrayOfVowels.includes(arrayOfLetters[counter])) {
+			numOfVowels += 1; 
+		}
+	}	
+	return numOfVowels;
+}
+console.log(findingNumOfVowels("Strive not to be a success, but rather to be of value."));
