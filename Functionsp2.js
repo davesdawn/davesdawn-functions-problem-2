@@ -1,0 +1,2 @@
+/*Write a JavaScript function that accepts a string as a 
+parameter and counts the number of vowels within the string.*/
